@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBV_3cN32RLtsLbM8I-EgRXGBMD6VObAiA",
+  apiKey: import.meta.env.FIREBASE_API_KEY,
   authDomain: "portfolio-a78a1.firebaseapp.com",
   projectId: "portfolio-a78a1",
   storageBucket: "portfolio-a78a1.firebasestorage.app",
