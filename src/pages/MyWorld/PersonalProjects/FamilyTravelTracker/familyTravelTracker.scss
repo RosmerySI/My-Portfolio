@@ -1,0 +1,53 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.app-container {
+    
+    width: 90vw;
+    height: 78vh;   
+    font-family: 'Great Vibes';
+    font-size: larger;
+   text-align: center;
+   h2{
+    margin: 0;
+   }
+}
+
+.family-country-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: $background-color;
+    border-width: 10px 10px 0px 10px;
+    border-style: solid;
+    border-image: url('../../../../assets/images/flowers.png') 150 repeat;
+
+    @include sm {
+     
+        flex-direction: column;
+    }
+    
+      @include md {
+       
+        flex-direction: column;
+    }
+    
+      @include lg {
+       
+        flex-direction: row;
+    }
+    
+      @include xl {
+     
+        flex-direction: row;
+    }
+}
+
+
+.user-list label {
+   
+    cursor: pointer;
+}
+

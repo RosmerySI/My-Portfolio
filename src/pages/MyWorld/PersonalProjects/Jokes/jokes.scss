@@ -1,0 +1,84 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+
+.jokes-container {
+  width: 99vw;
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jokes-card {
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: $background-color;
+  border-radius: 5px;
+  border-width: 20px;
+  border-style: solid;
+  border-image: url('./../../../../assets/images/flowers.png') 150 repeat;
+  font-size: 12px;
+  padding: 5%;
+
+  @include sm {
+    width: 80vw;
+    font-size: 18px;
+
+  }
+
+  @include md {
+    width: 40vw;
+    font-size: 18px;
+
+  }
+
+  @include lg {
+    width: 40vw;
+    font-size: 20px;
+
+  }
+
+  @include xl {
+    width: 40vw;
+    font-size: 20px;
+
+  }
+}
+
+.joke-button{
+  width: 45% ;
+  height: 10%;
+  border-radius: 5px;
+  border: dotted 2px goldenrod;
+  background-color: white;
+  @include sm {
+    width: 30%;
+    height: 10%;
+
+  }
+
+  @include md {
+    width: 20%;
+    height: 30%;
+
+  }
+
+  @include lg {
+    width: 30%;
+    height: 10%;
+
+  }
+
+  @include xl {
+    width: 20% ;  
+    height: 20%;
+
+  }
+}

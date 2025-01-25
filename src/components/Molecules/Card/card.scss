@@ -1,0 +1,130 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.card-container-experience{
+  width: 100vw;
+  height: 100vh;
+  @include sm {
+    width: 90vw; 
+  }
+
+  @include md {
+    width: 70vw; 
+  }
+
+  @include lg {
+    width: 70vw; 
+  }
+
+  @include xl {
+    width: 70vw; 
+  }
+}
+.card-container-world{
+  width: 100vw;
+  height: 55vh;
+  @include sm {
+    width: 80vw; 
+    height: 55vh;
+  }
+
+  @include md {
+    width: 70vw;
+    height: 55vh;  
+  }
+
+  @include lg {
+    width: 70vw; 
+    height: 55vh;
+  }
+
+  @include xl {
+    width: 70vw; 
+    height: 55vh;
+  }
+}
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  background-color: $background-color;
+  border-radius: 5%;
+  padding: 3%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.5);
+  transform-style: preserve-3d;
+  background: linear-gradient(145deg, $background-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 10px;  
+  border-width: 20px;
+  border-style: solid;
+  border-image: url('../../../assets/images/flowers.png') 150 repeat;
+
+  @include sm {
+    width: 70%;
+    height: 100%
+  }
+
+  @include md {
+    width: 60%;
+    height: 100%
+  }
+
+  @include lg {
+    width: 50%;
+    height: 100%
+  }
+
+  @include xl {
+    width: 40%;
+    height: 100%
+  }
+}
+
+.card:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) ;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(255, 255, 255, 0.6);
+}
+
+.card_image {
+  width: 40vw;
+  height: 20vh;
+  border-radius: 50%;
+  border: solid 5px goldenrod;
+
+  @include sm {
+    width: 30vw;
+    height: 20vh
+  }
+
+  @include md {
+    width: 25vw;
+    height: 20vh
+  }
+
+  @include lg {
+    width: 20vw;
+    height: 20vh
+  }
+
+  @include xl {
+    width: 12vw;
+    height: 20vh
+  }
+
+}
+
+.card_paragraph {
+  width: 90%;
+  height: 65%;
+  text-align: justify;
+  padding: 2%;
+  border: dotted 3px goldenrod;
+  border-radius: 5px;
+  overflow: auto;
+  scrollbar-width: none;
+}

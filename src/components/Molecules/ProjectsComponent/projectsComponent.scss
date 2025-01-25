@@ -1,0 +1,59 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.projectsComponent-container {
+    width: 98.5vw;
+    height:25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color;   
+    border-width: 20px 20px 20px 20px;
+    border-style: solid;
+    border-image: url('../../../assets/images/flowers.png') 150 repeat;
+
+}
+
+.projectsComponentButtons {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: auto;
+    scrollbar-width: none;
+
+    @include sm {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    @include md {
+        width: 60%;       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    @include lg {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @include xl {
+        width: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

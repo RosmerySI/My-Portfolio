@@ -1,0 +1,49 @@
+{
+  "name": "portfolio-rosmerysalazar",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/icons-material": "^6.1.10",
+    "@mui/material": "^6.1.10",
+    "@tsparticles/react": "^3.0.0",
+    "axios": "^1.7.9",
+    "country-list": "^2.3.0",
+    "d3-geo": "^3.1.1",
+    "firebase": "^11.1.0",
+    "p-limit": "^6.1.0",
+    "papaparse": "^5.4.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.4.0",
+    "react-lazy-load-image-component": "^1.6.3",
+    "react-router": "^7.0.2",
+    "react-router-dom": "^7.0.2",
+    "react-simple-maps": "^3.0.0",
+    "react-slick": "^0.30.2",
+    "react-tsparticles": "^2.12.2",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.15.2",
+    "tsparticles": "^3.7.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "sass": "^1.82.0",
+    "vite": "^4.3.9"
+  }
+}

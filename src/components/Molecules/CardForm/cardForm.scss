@@ -1,0 +1,71 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.form_container {
+    width: 90vw ;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @include sm {
+        width: 80vw;
+        
+    }
+    
+      @include md {
+        width: 60vw;
+        
+    }
+    
+      @include lg {
+        width: 40vw;
+       
+    }
+    
+      @include xl {
+        width: 40vw;
+        
+    }
+}
+
+.form {
+    width: 100%;
+    height: 70vh;
+    background-color: $background-color ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    border-width: 20px;
+    border-style: solid;
+    border-image: url('../../../assets/images/flowers.png') 150 repeat;
+    
+}
+
+.input{
+    width: 60%;
+    height: 10%;
+    border: solid 1px $text-color;
+    border-radius: 5px;
+}
+
+.button{
+    width: 60%;
+    height: 10%;
+    border-radius: 5px;
+    background-color: pink ;
+    border: solid 1px goldenrod;
+    font-size: large;
+    cursor: pointer;
+}
+.buttonCancel{
+    width: 60%;
+    height: 10%;
+    border-radius: 5px;
+    background-color: rgb(183, 39, 63) ;
+    border: solid 1px goldenrod;
+    font-size: large;
+    cursor: pointer;
+    color: white;
+}

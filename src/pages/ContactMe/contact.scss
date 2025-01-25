@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.contact-container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+   
+    
+}
+.contact{
+    width: 100%;
+    height: 80%;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    place-self: center;
+    border-width: 20px;
+    border-style: solid;
+    border-image: url('../../assets/images/flowers.png') 150 repeat;
+    font-size: large;
+    @include sm {
+        width: 90%;
+       
+      }
+    
+      @include md {
+        width: 70%;
+    
+      }
+    
+      @include lg {
+        width: 50%;
+     
+      }
+    
+      @include xl {
+        width: 40%;
+       
+      }
+   
+    
+}

@@ -1,0 +1,273 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.calc-container {
+    width: 90vw;
+    height: 90vh;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+    border-radius: 20px;
+    margin: auto;
+    animation: cascade 3s;
+    animation-direction: normal;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    border-width: 20px;
+    border-style: solid;
+    border-image: url('../../../../assets/images/flowers.png') 150 repeat;
+    overflow: auto;
+    scrollbar-width: none;
+    @include sm {
+        width: 60vw;
+        height: 70vh;
+    }
+
+    @include md {
+        width: 40vw;
+        height: 70vh;
+    }
+
+    @include lg {
+        width: 30vw;
+        height: 70vh;
+    }
+
+    @include xl {
+        width: 20vw;
+        height: 70vh;
+    }
+
+}
+
+@keyframes cascade {
+    0% {
+        transform: translatey(-700px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+
+.orange:hover {
+    transform: scale(1.1);
+
+
+}
+
+.mathSigns:hover {
+    transform: scale(1.1);
+
+
+}
+
+.numbers:hover {
+    transform: scale(1.1);
+
+
+}
+
+.operations:hover {
+    transform: scale(1.1);
+
+
+}
+
+.purple:hover {
+    transform: scale(1.1, 1.1);
+
+
+}
+
+
+
+.screen-result {
+    font-size: 50px;
+    text-align: end;
+    width: 100%;
+    height: auto;
+    border: solid 1px goldenrod;
+
+
+
+}
+
+.secondScreen {
+    font-size: 30px;
+    text-align: end;
+    width: 100%;
+}
+
+.screen {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.text {
+    color: var(--color-text);
+    font-size: 10px;
+    color: #c2c3c5;
+    position: relative;
+    left: 60px;
+    bottom: 30px;
+}
+
+#flecha {
+    width: 55px;
+    height: 50px;
+    position: relative;
+    left: 125px;
+    bottom: 25px;
+    color: var(--color-text);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.orange {
+    background-color: orange;
+    border-radius: 100px;
+    width: 55px;
+    height: 50px;
+    border-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.mathSigns {
+    background-color: var(--color-textSigns);
+    border-radius: 100px;
+    width: 55px;
+    height: 50px;
+    border-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #be996f;
+
+}
+
+.operations {
+    background-color: #e1d5e9;
+    border-radius: 100px;
+    width: 55px;
+    height: 50px;
+    border-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #6943b1;
+
+}
+
+.numbers {
+    background-color: #f2f4f5;
+    border-radius: 100px;
+    width: 55px;
+    height: 50px;
+    border-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #8598a5;
+    font-size: 20px;
+}
+
+.purple {
+    background-color: #8e28dc;
+    border-radius: 50px;
+    width: 120px;
+    height: 50px;
+    border-style: none;
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+
+
+}
+
+
+.gif {
+
+    width: 100px;
+    height: 100px;
+
+
+}
+
+#erase {
+    transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 576px) {
+
+    .switch-button {
+        display: inline-block;
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+
+
+    #gif {
+
+        width: 150px;
+        height: 160px;
+        margin-left: 90px;
+        margin-bottom: 50px;
+    }
+
+    .purple {
+        background-color: #8e28dc;
+        border-radius: 50px;
+        width: 100px;
+        height: 50px;
+        border-style: none;
+
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #screen-result {
+        background-color: #fafafa;
+        font-size: 50px;
+        text-align: end;
+        margin-top: 0px;
+        width: 250px;
+        border-style: none;
+        color: #505355;
+        margin-left: 40px;
+
+    }
+
+    #secondscreen {
+        color: #505355;
+    }
+
+
+
+    
+
+}

@@ -1,0 +1,12 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.skills-container{
+    width: 98vw;
+    height: 100vh;
+    background-color: $background-color ;
+    display: flex;
+    justify-content: center; 
+    
+  
+}

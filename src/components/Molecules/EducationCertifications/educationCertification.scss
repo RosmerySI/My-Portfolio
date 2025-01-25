@@ -1,0 +1,80 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.education-certifications-section {
+  width: 100%;
+  background-color: $background-color ;
+  padding: 1%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-width: 20px;
+  border-style: solid;
+  border-image: url('../../../assets/images/flowers.png') 150 repeat;
+  h2 {
+
+    color: $text-color;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    font-family: "Great Vibes" ;
+    font-size: 30px;
+  }
+}
+
+.education-certifications-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+}
+
+.education-card,
+.certifications-card {
+  height: 40vh; 
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 2px; 
+  flex: 1;
+  min-width: 150px;
+  max-width: 400px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: justify;
+  border-width: 5px;
+  border-style: solid;
+  border-image: url('../../../assets/images/flowers.png') 150 repeat;
+  overflow: auto;
+  scrollbar-width: none;
+
+  @include sm {
+    width: 50vw;
+    height: 35vh;
+    padding: 1rem;
+  }
+
+  @include md {
+    padding: 2rem;
+    height: 30vh;
+  }
+
+  @include lg {
+    padding: 2rem;
+    height: 30vh;
+  }
+
+  @include xl {
+
+    height: 30vh;
+    padding: 2rem;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+
+}

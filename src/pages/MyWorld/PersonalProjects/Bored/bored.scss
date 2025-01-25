@@ -1,0 +1,51 @@
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 570px;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Great Vibes';
+
+}
+
+.form-input {
+  width: 80%;
+  height: 10%;
+  border-radius: 5px;
+  border: solid 1px goldenrod;
+  
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+}
+.card-item {
+  width: 100%;
+  padding: 5px 20px 20px;
+  border: 1px solid goldenrod;
+  background-color: white;
+  letter-spacing: 3px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.card-info {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-activity {
+  line-height: 1.2;
+  margin-top: 10px;
+}
+.tag-error {
+  width: 100%;
+  text-align: center;
+}
+
